@@ -7,10 +7,7 @@
         "128": "eye.png"
     },
     "background": {
-      "scripts": [ "background.js", 
-          "objectdetect/objectdetect.js",
-          "objectdetect/objectdetect.eye.js",
-          "objectdetect/objectdetect.frontalface.js"
+      "scripts": [ "background.js" 
         ],
       "persistent": false
     },
@@ -19,7 +16,7 @@
           "matches": [
             "<all_urls>"
           ],
-          "js": ["content.js"]
+          "js": ["webgazer.js", "content.js"]
         }
       ]
   }
