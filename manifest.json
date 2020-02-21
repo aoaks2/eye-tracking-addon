@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Eye-Tracking",
+    "version": "0.1",
+    "permissions": ["storage"],
+    "icons": {
+        "128": "eye.png"
+    },
+    "background": {
+      "scripts": [ "background.js", 
+          "objectdetect/objectdetect.js",
+          "objectdetect/objectdetect.eye.js",
+          "objectdetect/objectdetect.frontalface.js"
+        ],
+      "persistent": false
+    },
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["content.js"]
+        }
+      ]
+  }
